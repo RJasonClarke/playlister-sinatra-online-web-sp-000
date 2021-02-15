@@ -10,4 +10,4 @@ class Artist < ActiveRecord::Base
         Artist.all.find{|artist| artist.slug == slug}
     end
 
-ends
+end
