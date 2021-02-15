@@ -21,7 +21,7 @@ class SongsController < ApplicationController
         if Artist.find_by(:name => artist_name)
             artist = Artist.find_by(:name => artist_name)
         else
-            artist = Artist.create(:name => artist_name) 
+            artist = Artist.create(:name => artist_name)
         end
         @song.artist = artist
 
@@ -60,7 +60,7 @@ class SongsController < ApplicationController
             if Artist.find_by(:name => artist_name)
                 artist = Artist.find_by(:name => artist_name)
             else
-                artist = Artist.create(:name => artist_name) 
+                artist = Artist.create(:name => artist_name)
             end
             @song.artist = artist
         end
